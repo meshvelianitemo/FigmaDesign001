@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-left">
+        <button class="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="logo">sneakers</a>
+        <nav>
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <button class="cart-btn" aria-label="Open cart" id="cart-toggle">
+          <img src="assets/cart-logo.png" alt="cart logo" />
+          <span class="cart-count" id="cart-count" style="display: none"
+            >0</span
+          >
+        </button>
+
+        <div class="cart-dropdown" id="cart-dropdown">
+          <div class="cart-dropdown-header">Cart</div>
+          <div class="cart-dropdown-body" id="cart-body">
+            <p
+              style="
+                color: var(--gray);
+                font-size: 0.9rem;
+                text-align: center;
+                padding: 1rem 0;
+              "
+            >
+              Your cart is empty.
+            </p>
+          </div>
+        </div>
+
+        <img src="assets/profile-pic.png" alt="User avatar" class="avatar" />
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery">
+        <div class="gallery-main">
+          <img
+            src="assets/image1.png"
+            alt="Fall Limited Edition Sneakers"
+            id="main-img"
+          />
+          <button
+            class="gallery-nav gallery-prev"
+            aria-label="Previous image"
+            id="prev-btn"
+          >
+            <svg viewBox="0 0 12 18"><polyline points="11 1 2 9 11 17" /></svg>
+          </button>
+          <button
+            class="gallery-nav gallery-next"
+            aria-label="Next image"
+            id="next-btn"
+          >
+            <svg viewBox="0 0 12 18"><polyline points="1 1 10 9 1 17" /></svg>
+          </button>
+        </div>
+        <div class="gallery-thumbs">
+          <button class="thumb-btn active" data-index="0">
+            <img src="assets/image1.png" alt="Product thumbnail 1" />
+          </button>
+          <button class="thumb-btn" data-index="1">
+            <img src="assets/image2.png" alt="Product thumbnail 2" />
+          </button>
+          <button class="thumb-btn" data-index="2">
+            <img src="assets/image3.png" alt="Product thumbnail 3" />
+          </button>
+          <button class="thumb-btn" data-index="3">
+            <img src="assets/image4.png" alt="Product thumbnail 4" />
+          </button>
+        </div>
+      </section>
+
+      <section class="product">
+        <p class="product-brand">Sneaker Company</p>
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+        <p class="product-desc">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="pricing">
+          <div class="pricing-left">
+            <span class="price-current">$125.00</span>
+            <span class="price-badge">50%</span>
+          </div>
+          <span class="price-original">$250.00</span>
+        </div>
+
+        <div class="quantity-cart">
+          <div class="quantity">
+            <button
+              class="qty-btn"
+              id="qty-minus"
+              aria-label="Decrease quantity"
+            >
+              &#8722;
+            </button>
+            <span class="qty-value" id="qty-value">0</span>
+            <button
+              class="qty-btn"
+              id="qty-plus"
+              aria-label="Increase quantity"
+            >
+              &#43;
+            </button>
+          </div>
+          <button class="btn-add" id="add-to-cart">
+            <img class="cart-logo" src="assets/cart-logo.png" alt="cart" />
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
