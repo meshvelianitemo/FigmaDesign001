@@ -58,6 +58,21 @@
       </div>
     </header>
 
+    <div class="overlay"></div>
+
+<aside class="mobile-menu">
+  <button id="close-menu" class="close-menu" aria-label="Close menu">
+    <img src="assets/X-icon.png" alt="" />
+  </button>
+  <nav class="mobile-nav">
+    <a href="#">Collections</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</aside>
+
     <main>
       <section class="gallery">
         <div class="gallery-main">
@@ -139,6 +154,52 @@
         </div>
       </section>
     </main>
+
+    <div id="lightbox-overlay" class="lightbox-overlay">
+      <div class="lightbox">
+    
+        <button id="lightbox-close" class="lightbox-close">
+          <img src="assets/X-icon.png" alt="">
+        </button>
+    
+        <button id="lightbox-prev" class="gallery-nav gallery-prev">
+          <svg viewBox="0 0 12 18">
+            <polyline points="11 1 2 9 11 17" />
+          </svg>
+        </button>
+    
+        <img
+          id="lightbox-main-img"
+          src="assets/image1.png"
+          alt="Product image"
+        >
+    
+        <button id="lightbox-next" class="gallery-nav gallery-next">
+          <svg viewBox="0 0 12 18">
+            <polyline points="1 1 10 9 1 17" />
+          </svg>
+        </button>
+    
+        <div class="lightbox-thumbs">
+          <button class="lightbox-thumb" data-index="0">
+            <img src="assets/image1.png" alt="">
+          </button>
+    
+          <button class="lightbox-thumb" data-index="1">
+            <img src="assets/image2.png" alt="">
+          </button>
+    
+          <button class="lightbox-thumb" data-index="2">
+            <img src="assets/image3.png" alt="">
+          </button>
+    
+          <button class="lightbox-thumb" data-index="3">
+            <img src="assets/image4.png" alt="">
+          </button>
+        </div>
+    
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
