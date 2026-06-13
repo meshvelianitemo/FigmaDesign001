@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#"><img src="assets/filmLogo.svg" alt="main-logo" /></a>
+      <div class="middle-container">
+        <a href="#" class="nav1_logo"><img src="assets/nav1.svg" alt="" /></a>
+        <a href="#" class="nav2_logo"><img src="assets/nav2.svg" alt="" /></a>
+        <a href="#" class="nav3_logo"><img src="assets/nav3.svg" alt="" /></a>
+        <a href="#" class="nav4_logo"><img src="assets/nav4.svg" alt="" /></a>
+      </div>
+      <a href="#" class="profile-logo"
+        ><img src="assets/profile-pic.png" alt=""
+      /></a>
+    </nav>
+
+    <main>
+      <div class="search-container">
+        <button class="search-button" type="button" aria-label="Search">
+          <img src="assets/search-icon.svg" alt="" class="search-logo" />
+        </button>
+
+        <form class="search-form" action="/search" method="GET">
+          <input
+            type="search"
+            placeholder="Search for TV Series"
+            name="q"
+            aria-label="Search site"
+          />
+        </form>
+      </div>
+
+      <h2 class="container-title">TV Series</h2>
+      <section class="tv-series" id="tv-series">
+        <div class="film-card"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
